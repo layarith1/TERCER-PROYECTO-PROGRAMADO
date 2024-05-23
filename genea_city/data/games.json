@@ -1,0 +1,14 @@
+{
+    "games": [
+        {
+            "id": 1,
+            "name": "partida #1",
+            "id_player": "juan"
+        },
+        {
+            "id": 2,
+            "name": "partida #2",
+            "id_player": "pedro"
+        }
+    ]
+}
