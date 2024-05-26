@@ -1,10 +1,20 @@
-from interface import EntityInterface
+class Player:
+  def __init__(self, iD, name, gender, age):
+    self.id = iD
+    self.name = name
+    self.gender = gender
+    self.age = age
+    self.alive = None
 
-class Player(EntityInterface):
-  def __init__(self, nickname):
-    self.nickname = nickname
-  
-  def to_json(self):
-    return { "nickname": self.nickname }
+    self.father = None
+    self.mother = None
+    self.house = None
 
-test = Player("root")
+    self.couple = None
+    self.childs = []
+
+  def get_married(self, ihnabitant):
+    print(ihnabitant)
+
+  def have_a_child(self):
+    pass

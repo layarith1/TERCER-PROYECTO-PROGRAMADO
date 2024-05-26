@@ -1,8 +1,7 @@
-from interface import EntityInterface
+from datetime import date
 
-class Game(EntityInterface):
-  def __init__(self, name):
+class Game:
+  def __init__(self, name, owner_id):
     self.name = name
-
-  def to_json(self):
-    return { "name": self.name }
+    self.owner_id = owner_id
+    self.created_at = date.today()
